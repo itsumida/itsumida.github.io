@@ -10972,10 +10972,10 @@ section.resume-section .resume-section-content {
 }
 /* === Custom color overrides === */
 :root {
-  --bs-primary: #2563eb;              /* main blue */
-  --bs-primary-rgb: 37, 99, 235;
-  --bs-link-color: #2563eb;           /* link color */
-  --bs-link-hover-color: #1e40af;     /* darker blue for hover */
+  --bs-primary: #1e3a8a;             
+  --bs-primary-rgb: 30, 58, 138;
+  --bs-link-color: #1e3a8a;
+  --bs-link-hover-color: #172554;    
 }
 
 /* Fix components that used hard-coded orange */
