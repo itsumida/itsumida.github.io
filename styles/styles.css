@@ -10970,3 +10970,43 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+/* === Custom color overrides === */
+:root {
+  --bs-primary: #2563eb;              /* main blue */
+  --bs-primary-rgb: 37, 99, 235;
+  --bs-link-color: #2563eb;           /* link color */
+  --bs-link-hover-color: #1e40af;     /* darker blue for hover */
+}
+
+/* Fix components that used hard-coded orange */
+.text-primary { color: var(--bs-primary) !important; }
+.bg-primary { background-color: var(--bs-primary) !important; }
+.border-primary { border-color: var(--bs-primary) !important; }
+
+a { color: var(--bs-link-color); }
+a:hover { color: var(--bs-link-hover-color); }
+
+.form-check-input:checked {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.form-range::-webkit-slider-thumb {
+  background-color: var(--bs-primary);
+}
+.form-range::-moz-range-thumb {
+  background-color: var(--bs-primary);
+}
+.form-range::-ms-thumb {
+  background-color: var(--bs-primary);
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+  background-color: var(--bs-link-hover-color);
+  border-color: var(--bs-link-hover-color);
+}
+
